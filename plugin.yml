@@ -1,0 +1,93 @@
+name: WelcomeBookRecoded
+version: 1.0
+description: The complete (recoded) plugin for all things books!
+author: YoFuzzy3
+dev-url: http://dev.bukkit.org/server-mods/welcomebook/
+main: com.fuzzoland.WelcomeBookRecoded.WBR
+softdepend: [Vault]
+
+commands:
+  wbr:
+    description: Use /wbr.
+  gb:
+    description: Use /gb.
+        
+permissions:
+  wbr.core:
+    description: All core features of WBR.
+    children:
+      wbr.list: true
+      wbr.export: true
+      wbr.get: true
+      wbr.delete: true
+      wbr.preview: true
+      wbr.give: true
+      wbr.settitle: true
+      wbr.setauthor: true
+      wbr.undo: true
+      wbr.reload: true
+      wbr.import: true
+      wbr.gb: true
+  wbr.list:
+    description: Use /wbr list
+    default: op
+  wbr.export:
+    description: Use /wbr export
+    default: op
+  wbr.get:
+    description: Use /wbr get
+    default: op
+  wbr.delete:
+    description: Use /wbr delete
+    default: op
+  wbr.preview:
+    description: Use /wbr preview
+    default: op
+  wbr.give:
+    description: Use /wbr give
+    default: op
+  wbr.settitle:
+    description: Use /wbr settitle
+    default: op
+  wbr.setauthor:
+    description: Use /wbr setauthor
+    default: op
+  wbr.undo:
+    description: Use /wbr undo
+    default: op
+  wbr.reload:
+    description: Use /wbr reload
+    default: op
+  wbr.import:
+    description: use /wbr import
+    default: op
+  wbr.gb:
+    description: Use /gb
+    default: true
+  wbr.shop:
+    description: All shop featuers of WBR.
+    children:
+      wbr.makeshop.normal: true
+      wbr.makeshop.normal.nofee: true
+      wbr.makeshop.infinite: true
+      wbr.useshop.normal: true
+      wbr.useshop.infinite: true
+      wbr.breakshop: true
+  wbr.makeshop.normal:
+    description: Allowed to make player BookShops.
+    default: true
+  wbr.makeshop.normal.nofee:
+    description: Allowed to bypass player BookShop creation fee.
+    default: false
+  wbr.makeshop.infinite:
+    description: Allowed to make admin BookShops.
+    default: op
+  wbr.useshop.normal:
+    description: Allowed to use player BookShops.
+    default: true
+  wbr.useshop.infinite:
+    description: Allowed to use admin BookShops.
+    default: true
+  wbr.breakshop:
+    description: Allowed to bypass BookShop protection.
+    default: op
