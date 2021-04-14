@@ -1,4 +1,4 @@
-# Settings file for the plugin WBR by YoFuzzy3
+# Settings file for the plugin WelcomeBook by YoFuzzy3
 #
 # Please make changes and then use /wbr reload
 #
@@ -9,12 +9,12 @@
 
 FirstJoin:
   Enabled: true
-  Books: []
+  Books: [ ]
 EveryJoin:
   Enabled: false
-  Books: []
+  Books: [ ]
 CmdGB:
-  Books: []
+  Books: [ ]
 BookCooldown: 0
 BookShop:
   Enabled: false
@@ -24,4 +24,4 @@ BookShop:
     Amount: 23.99
 CustomCommands:
   Enabled: false
-  Books: []
+  Books: [ ]

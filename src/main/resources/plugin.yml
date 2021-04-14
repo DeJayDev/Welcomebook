@@ -1,20 +1,20 @@
-name: WelcomeBookRecoded
-version: 1.0
-description: The complete (recoded) plugin for all things books!
-author: YoFuzzy3
-dev-url: http://dev.bukkit.org/server-mods/welcomebook/
-main: com.fuzzoland.WelcomeBookRecoded.WBR
-softdepend: [Vault]
+name: WelcomeBook
+version: ${project.version}
+main: com.fuzzoland.welcomebook.WelcomeBook
+api-version: 1.16
+softdepend: [ Vault ]
+authors: [ YoFuzzy3, DeJayDev ]
+description: The complete plugin for all things books!
 
 commands:
   wbr:
     description: Use /wbr.
   gb:
     description: Use /gb.
-        
+
 permissions:
   wbr.core:
-    description: All core features of WBR.
+    description: All core features of WelcomeBook.
     children:
       wbr.list: true
       wbr.export: true
@@ -25,6 +25,7 @@ permissions:
       wbr.settitle: true
       wbr.setauthor: true
       wbr.undo: true
+      wbr.undo.others: true
       wbr.reload: true
       wbr.import: true
       wbr.gb: true
@@ -55,6 +56,9 @@ permissions:
   wbr.undo:
     description: Use /wbr undo
     default: op
+  wbr.undo.others:
+    description: Use /unsign for other players
+    default: op
   wbr.reload:
     description: Use /wbr reload
     default: op
@@ -65,7 +69,7 @@ permissions:
     description: Use /gb
     default: true
   wbr.shop:
-    description: All shop featuers of WBR.
+    description: All shop featuers of WelcomeBook.
     children:
       wbr.makeshop.normal: true
       wbr.makeshop.normal.nofee: true
